@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  font-family: $roboto-regular;
+  border-top: 1px solid #d1d1d1;
+  margin-top: 30px;
+  flex-shrink: 0;
+  &__social_media {
+    &_network {
+      margin-right: 10px;
+      &-img {
+        width: 35px;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

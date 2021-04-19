@@ -1,0 +1,214 @@
+.header {
+  padding: 10px 30px;
+  margin-bottom: 50px;
+  background-color: black;
+  color: #fff;
+  .desktop__menu {
+    display: block;
+    visibility: visible;
+  }
+  .mobile__menu {
+    display: none;
+    visibility: hidden;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu-menu-principal-container {
+    ul.menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: $sans-bold;
+      li {
+        margin-right: 25px;
+        a {
+          color: inherit;
+          transition: color ease-in-out 0.2s;
+          &:hover {
+            color: #8c919b;
+          }
+        }
+      }
+    }
+  }
+  &__info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-social {
+      margin-right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &_network {
+        margin-right: 8px;
+        width: 25px;
+        height: 25px;
+        display: block;
+        &:last-child {
+          margin-right: 0;
+        }
+        &-img {
+          width: 100%;
+          display: none;
+          &.show {
+            display: block;
+          }
+        }
+      }
+    }
+    &-logo {
+      a {
+        color: inherit;
+        transition: color ease-in-out 0.2s;
+        &:hover {
+          color: #8c919b;
+        }
+        p {
+          font-size: 25px;
+          font-family: $roboto-regular;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .header {
+    padding: 0;
+    margin: 0;
+    background-color: initial;
+    color: initial;
+    .desktop__menu {
+      display: none;
+      visibility: hidden;
+    }
+    .mobile__menu {
+      height: 80px;
+      display: block;
+      visibility: visible;
+      &_logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 10px 20px 0 0;
+        a {
+          margin-right: 10px;
+          color: inherit;
+          transition: color ease-in-out 0.2s;
+          &:last-child {
+            margin-right: 0px;
+          }
+          &:hover {
+            color: #8c919b;
+          }
+          p {
+            font-size: 25px;
+            font-family: $roboto-regular;
+          }
+        }
+      }
+      &_structure {
+        li,
+        a {
+          margin: 75px 0 -55px 0;
+          color: #fff;
+          font: 14pt "Roboto", sans-serif;
+          font-weight: 700;
+          line-height: 1.8;
+          text-decoration: none;
+          text-transform: none;
+          list-style: none;
+          outline: 0;
+          display: none;
+        }
+        li {
+          width: 230px;
+          text-indent: 56px;
+        }
+        a:focus {
+          display: block;
+          color: #333;
+          background-color: #eee;
+          transition: all 0.5s;
+        }
+
+        #trigger,
+        #burger,
+        #burger:before,
+        #burger:after {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          background: #fff;
+          width: 30px;
+          height: 5px;
+          transition: 0.2s ease;
+          cursor: pointer;
+          z-index: 2;
+        }
+        #trigger {
+          height: 25px;
+          background: none;
+        }
+        #burger:before {
+          content: " ";
+          top: 10px;
+          left: 0;
+        }
+        #burger:after {
+          content: " ";
+          top: 20px;
+          left: 0;
+        }
+        #menu-toggle:checked + #trigger + #burger {
+          top: 35px;
+          transform: rotate(180deg);
+          transition: transform 0.2s ease;
+        }
+
+        #menu-toggle:checked + #trigger + #burger:before {
+          width: 20px;
+          top: -2px;
+          left: 18px;
+          transform: rotate(45deg) translateX(-5px);
+          transition: transform 0.2s ease;
+        }
+        #menu-toggle:checked + #trigger + #burger:after {
+          width: 20px;
+          top: 2px;
+          left: 18px;
+          transform: rotate(-45deg) translateX(-5px);
+          transition: transform 0.2s ease;
+        }
+        #menu {
+          position: absolute;
+          margin: 0;
+          padding: 0;
+          width: 80px;
+          height: 80px;
+          background-color: #000;
+          border-bottom-right-radius: 100%;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+          transition: 0.2s;
+          z-index: 1;
+        }
+        #menu-toggle:checked + #trigger + #burger + #menu {
+          animation: checked-anim 0.2s ease both;
+        }
+        
+        #menu-toggle:checked + #trigger ~ #menu > li,
+        a {
+          display: block;
+        }
+        [type="checkbox"]:not(:checked),
+        [type="checkbox"]:checked {
+          display: none;
+        }
+      }
+    }
+  }
+}
