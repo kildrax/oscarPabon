@@ -1,11 +1,11 @@
 .category {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
   flex-wrap: wrap;
   &_wrap {
     width: 30%;
-    height: 500px;
+    height: auto;
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
@@ -29,10 +29,11 @@
       &--title {
         padding: 0 10px;
         font-size: 20px;
-        line-height: 20px;
+        line-height: 25px;
         margin-bottom: 20px;
         color: #333;
         font-family: $sans-bold;
+        text-decoration: underline;
       }
       &_wrapper {
         margin-bottom: 5px;

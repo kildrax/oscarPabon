@@ -115,7 +115,7 @@
                 </div>
             </div>
             <?php endwhile; else : ?>
-	            <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+	            <p><?php esc_html_e( 'Lo sentimos, ninguna publicación está disponible en el momento.' ); ?></p>
             <?php endif; ?>
             <?php wp_reset_query(); ?>
         </div>

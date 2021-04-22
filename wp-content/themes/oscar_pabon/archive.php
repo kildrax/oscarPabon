@@ -6,7 +6,7 @@
                 <?php echo get_the_post_thumbnail($page=null, array( 400, 400)); ?>
                 <h1 class="category_wrap_content--title"><?php the_title(); ?></h1>
                 <div class="category_wrap_content_wrapper">
-                    <span class="category_wrap_content_wrapper--txt">Por: <b><?php the_author(); ?></b></span>
+                    <span class="category_wrap_content_wrapper--txt">Por: <b><?php the_author(); ?></b> | </span>
                     <span class="category_wrap_content_wrapper--txt"><?php echo get_the_date('F j, Y'); ?></span>
                 </div>
                 <?php wp_trim_excerpt(the_excerpt()); ?>
