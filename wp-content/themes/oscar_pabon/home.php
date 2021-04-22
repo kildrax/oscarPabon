@@ -110,7 +110,7 @@
                     <h3 class="sub_top__vertical-info-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                     <?php the_excerpt(); ?>
                     <p class="sub_top__vertical-info-extra">
-                        <span><?php echo get_the_date('F j, Y'); ?></span> | <span><?php echo get_the_author(); ?></span>
+                        <span><?php echo get_the_date('F j, Y'); ?></span>
                     </p>
                 </div>
             </div>

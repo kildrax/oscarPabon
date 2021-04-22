@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <link rel="canonical" href="">
+    <meta name="description" content="Pagina Web Oficial de Oscar Pabón periodista y comunicador social comunitario de la ciudad de Villavicencio.">
+    <meta name="keywords" content="comunicador social, periodismo, periodista, noticias, noticias de villavicencio, historico y cultural, medio ambiente villavicencio, otros autores, información al día, comunicación comunitaria, información villavicencio.">
+    <meta name="author" content="Kildrax" />
+    <meta name="copyright" content="Oscar Pabón" />
     <title>Oscar Pabón</title>
     <?php wp_head(); ?>
 </head>
