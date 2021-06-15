@@ -8,8 +8,20 @@
     <meta name="keywords" content="comunicador social, periodismo, periodista, noticias, noticias de villavicencio, historico y cultural, medio ambiente villavicencio, otros autores, información al día, comunicación comunitaria, información villavicencio.">
     <meta name="author" content="Kildrax" />
     <meta name="copyright" content="Oscar Pabón" />
-    <title>Oscar Pabón</title>
+    <title><?php wp_title(''); ?></title>
     <?php wp_head(); ?>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7F1ZER479Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-7F1ZER479Y');
+    </script>
 </head>
 
 <body>
