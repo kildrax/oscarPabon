@@ -5,11 +5,11 @@
             <div class="singlePost__content">
                 <h1 class="singlePost__content-title"><?php the_title() ?></h1>
                 <div class="singlePost__content-info">
-                    <span class="singlePost__content-info-txt">Por: <b><?php the_field( 'autor_de_la_publicacion' ); ?></b></span>
+                    <span class="singlePost__content-info-txt">Por: <b><?php the_field('autor_de_la_publicacion'); ?></b></span>
                     <span class="singlePost__content-info-txt"><?php echo get_the_date('F j, Y') ?></span>
                 </div>
                 <div class="singlePost__content-all"><?php the_content() ?></div>
-                <?php comments_template(); ?> 
+                <?php comments_template(); ?>
             </div>
         <?php endwhile; ?>
     <?php endif; ?>
