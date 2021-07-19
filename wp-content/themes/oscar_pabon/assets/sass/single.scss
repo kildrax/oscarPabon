@@ -30,9 +30,9 @@
       font-family: $sans-regular;
       figure {
         img {
-          width: 100%;
+          width: auto;
           height: auto;
-          object-fit: fill;
+          object-fit: none;
         }
         figcaption {
           font-size: 13px;
@@ -70,6 +70,12 @@
         cite {
           font-size: 12px;
           margin-left: 10px;
+        }
+      }
+      ul,ol {
+        list-style: auto;
+        li {
+          margin-bottom: 15px;
         }
       }
     }
@@ -153,7 +159,7 @@
       &-all {
         figure {
           img {
-            height: 350px;
+            object-fit: contain;
           }
         }
         p {
