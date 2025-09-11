@@ -33,8 +33,7 @@ The website is hosted on **DreamHost**, with weekly content updates and ongoing 
 This repository is meant for showcase purposes only. However, if you wish to reuse or adapt the code, please provide proper credit to the original author.
 
 ## 📜 License
-
-Open source – feel free to use or adapt the code, but kindly give attribution somewhere in your project.
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.
 
 ## 👤 Author & Contact
 
